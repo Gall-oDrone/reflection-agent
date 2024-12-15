@@ -37,3 +37,10 @@ graph.get_graph().print_ascii()
 
 if __name__ == "__main__":
     print("Hello LangGraph")
+    inputs = HumanMessage(content="""Make this tweet better:
+                                    @LangChainAI
+            - newly Tool Calling feature is seriously underrated,
+            After a long wait, it's here- making the implementation of agents across different models with function calls
+            Make a video covering their newest blog post
+    """)
+    response = graph.invoke(inputs)
